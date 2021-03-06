@@ -52,16 +52,26 @@ $l = [
 
 for ($i=0; $i < count($l); $i++) { 
 
+}
 
-
-$res = $sorare->getDataFromCardId($l[$i]);
+$res = $sorare->getDataFromCardId("874ad0eb-af30-4637-b86c-c740190c08f6");
+/*
 $res = json_decode($res, true)['data']['card'];
 echo $res['player']['displayName'] . "<br><br>";	
 echo intval($res['openAuction']['bestBid']['amount']) / 1000000000000000000;
 $url = $res['pictureUrl'];
 echo "<img src=\"$url\" width='195px' height='317px'>";
 $name = $res['player']['displayName'];
-echo '<a href="https://www.soraredata.com/playerSearch/'.$name.'" target="_blank">'.$name.'</a> <br><br>';
-}
+echo '<a href="https://www.soraredata.com/playerSearch/'.$name.'" target="_blank">'.$name.'</a> <br><br>';*/
 ?>
-<link rel="stylesheet" type="text/css" href="style.css">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>TEST</title>
+</head>
+<body>
+
+</body>
+</html>

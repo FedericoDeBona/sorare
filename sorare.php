@@ -2,8 +2,10 @@
 class SorareUtlis{
 
 	function getDataFromCardId($id){
-		$query = json_encode(array('query' => 'query {card(slug: "'.$id.'") { blockchainId pictureUrl  player{displayName} openAuction { bestBid { amount createdAt } } } }'));
 		$host = "https://api.sorare.com/graphql";
+		// Get player slug from card id
+		$query = json_encode('query' => 'query{card(slug: "'.$id.'") {player{slug}}}');
+		
 		$options = array(
 			'http' => array(
 				'header' => "Content-type: application/json",
@@ -14,6 +16,11 @@ class SorareUtlis{
 
 		$context = stream_context_create($options);
 		$res = file_get_contents($host, false, $context);
+		echo "ciao";
+		echo $res;
+
+		$query = json_encode(array('query' => 'query {card(slug: "'.$id.'") { blockchainId pictureUrl  player{displayName} openAuction { bestBid { amount createdAt } } } }'));
+
 		return $res;
 	}
 	public function getETHValue()
