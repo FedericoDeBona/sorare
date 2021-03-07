@@ -48,13 +48,19 @@ $l = [
 	"bfa1d9aa-01cd-4c68-9cb8-8e7bcedf9c43",
 	"a4462adb-4060-47d1-a596-b3c606db2fff",
 ];
+/*
+$res = $sorare->getOffersAndAuctionsFromCardId("874ad0eb-af30-4637-b86c-c740190c08f6");
 
+$offers = $res[0];
+$pastAuctions = $res[1];
+*/
 
-for ($i=0; $i < count($l); $i++) { 
+$offers = [0.08, 0.07, 0.1];
+$pastAuctions = [array("price" => 0.008, "data" => "01/01/2020")];
+$table = "<table>";
 
-}
-
-$res = $sorare->getDataFromCardId("874ad0eb-af30-4637-b86c-c740190c08f6");
+$table .= "</table>";
+echo $table;
 /*
 $res = json_decode($res, true)['data']['card'];
 echo $res['player']['displayName'] . "<br><br>";	
@@ -69,9 +75,28 @@ echo '<a href="https://www.soraredata.com/playerSearch/'.$name.'" target="_blank
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>TEST</title>
+	<title>Kohei Okuno</title>
 </head>
 <body>
-
+	<h1><center>Kohei Okuno</center></h1>
+	<div class="container">
+		<div class="player-img"></div>
+		<div class="offers-table">
+			<table class="offers">
+				<tr>
+					<th>Offerte</th>
+				</tr>
+				<tr>
+					<td>0.08 ETH</td>
+				</tr>
+				<tr>
+					<td>0.02 ETH</td>
+				</tr>
+				<tr>
+					<td>0.03 ETH</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 </body>
 </html>

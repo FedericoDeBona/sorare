@@ -1,3 +1,47 @@
 *{
 	font-family: sans-serif;
 }
+
+.container{
+	display: flex;
+	flex-direction: row;
+}
+
+.offers{
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+
+}
+.offers th, .offers td{
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+.offers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.offers tr:nth-child(even){background-color: #f2f2f2;}
+
+.offers tr:hover {background-color: #ddd;}
+
+.player-img{
+	background-image: url("https://assets.sorare.com/seasonpicture/1a2fa9c1-baf6-4443-b28f-a6090115cec3/picture/d074e5aa1aee1d1baadc60e977728a91.png");
+	background-size: cover;
+	width: 196.5px;
+	height: 295px;
+}
+
+.offers-table{
+	width: 200px;
+}
+
+@media (max-width: 500px){
+	.container{
+		flex-direction: column;
+	}
+}
