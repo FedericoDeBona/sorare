@@ -27,27 +27,29 @@ $res = file_get_contents($host, false, $context);
 $sorare = new SorareUtlis();
 
 $l = [
-	"ad14b355-aa18-4032-9e62-4cf342692e07",
-	"33ce0f77-0cdd-406f-a0a5-f693a36f2d52",
-	"7d826b04-f016-4f54-933e-394e486bcd05",
-	"4ad3f38f-b42d-4886-a264-b52d47e162d4",
-	"8edb80d3-3079-49f2-ae61-2149429d1290",
-	"ee7a503b-6c05-45dc-9e6d-ad3e8ec9ed04",
-	"7a261e9f-97d1-4650-8599-1b0a09b37a55",
-	"cd5b5fbb-eb2e-4636-abcf-359c1c01cfbc",
-	"0fe4b45a-93cb-4a36-a6bf-8b2aaa12badc",
-	"431015e0-5fbb-4dcc-9295-f1fdd85aca40",
-	"190704d4-e2f4-4264-bdff-ecaca25d6ef9",
-	"a7b28ada-f4ea-4b70-95c3-14543f2949b6",
-	"2099b2f0-e60e-4037-9ddf-5c2d9b24a73e",
-	"dc6a7ede-180d-4ed8-8cc1-866be3b6d8c6",
-	"1efa7240-75a0-4b70-9583-53ef260931bc",
-	"1adf8222-f27f-4e98-8863-1a6ade2e6f61",
-	"f1ad800f-3b7a-4d1d-a5d0-5d426728ff30",
-	"c66fdc5b-6566-4c4d-ad2f-c51801a5d2d4",
-	"bfa1d9aa-01cd-4c68-9cb8-8e7bcedf9c43",
-	"a4462adb-4060-47d1-a596-b3c606db2fff",
+	"09c8ff63-bb91-4f84-8a83-6d817bc9f5c1",
+	"662edcf3-9513-44d1-aa63-87277a7cd361",
+	"f93fb1b2-db93-4035-a428-e383fae44e1a",
+	"61e6d259-23ef-4a0a-b117-c01ac511a4c0",
+	"5da20184-bd3a-4e60-8c69-089cea938534",
+	"62b6dd8b-4521-40bc-ad88-0ff0794c376b",
+	"824ad089-0731-4b6d-8818-902ad1725f6b",
+	"42cb3a57-3fca-4296-b160-b139d8231fb5",
+	"2c9fedd9-53ed-4da3-946b-5f6094f20e81",
+	"b85b9fa8-c7fb-491a-a556-9a1eb6372db2",
+	"7eab6658-d371-4e73-a2d6-8080c4e1d246",
+	"67c6314f-8fca-499a-b303-af8d4d95f779",
+	"b46ba80d-2d3e-4145-93ff-67e5f9a07f1e",
+	"f31b6b0d-cb19-40bf-b433-59bb24dc7b55",
+	"2ddd4fc4-8119-4fdd-ad7d-9724fb9c1298",
+	"9651af71-5bc3-48e1-a239-15779d08ff38",
+	"1668b40e-2365-436c-bc0a-f9db363d5044",
+	"f2397151-ba84-4626-ba09-33dbf8253989",
+	"e0a744ec-bcaa-4f5b-9fe5-433c199cea42",
+	"859abd4c-482f-4325-9873-1f0605b83ae5",
 ];
+
+
 /*
 $res = $sorare->getOffersAndAuctionsFromCardId("874ad0eb-af30-4637-b86c-c740190c08f6");
 

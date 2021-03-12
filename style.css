@@ -1,7 +1,9 @@
-*{
-	font-family: sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
+body{
+	font-family: 'Inter', sans-serif;
+}
+/*
 .container{
 	display: flex;
 	flex-direction: row;
@@ -44,4 +46,47 @@
 	.container{
 		flex-direction: column;
 	}
+}
+*/
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: rgb(244, 82, 6);
+	padding: 10px;
+	margin: 2%;
+}
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	margin: 5px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.player-img{
+	margin: 0 auto;
+	width: 196.5px;
+	height: 315px;
+}
+
+.buttons{
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	background-color: #f45206; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px;
+}
+
+button:hover{
+	background-color: #f99100;
 }
