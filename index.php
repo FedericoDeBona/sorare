@@ -1,23 +1,26 @@
 <?php 
 include "sorare.php";
-set_time_limit(0);
 $sorare = new SorareUtlis();
+$leagues = $sorare->getAllLeagues();
 if(isset($_POST['btnOk'])){
-	
-	$start = microtime(true);
-	
-	
-
-	echo "<br><br>Done in: " . $time_elapsed_secs = microtime(true) - $start . "<br><br>";
-}else{
-	$leagues = $sorare->getAllLeagues();
-
-	echo '<form method="POST" action="benchmark.php?from=0&to=3&max=0.12">';
+	//benchmark.php?from=0&to=3&max=0.12
+	$maxEth = $_POST['maxEth'];
+	$selectedLeagues = [];
 	for ($i=0; $i < count($leagues); $i++) { 
-		echo "<input type='checkbox' id='$i' name='$i' value='$leagues[$i]'>";
+		if(isset($_POST[$leagues[$i]])){
+			$selectedLeagues[] = $_POST[$leagues[$i]];
+		}
+ 	}
+}else{
+	
+
+	echo '<form method="POST" action="benchmark.php?from=0&to=3&max=0.1">';
+	for ($i=0; $i < count($leagues); $i++) { 
+		echo "<input type='checkbox' id='$leagues[$i]' name='$leagues[$i]' value='$leagues[$i]'>";
 		echo "<label for='$i'>$leagues[$i]</label><br>";
 	}
-	echo "<button type='submit'>Cerca</button>";
+	echo "<br>Max Eth <input type='text' name='maxEth' value='0.1'><br><br>";	
+	echo "<button type='submit' name='btnOk'>Cerca</button>";
 	echo '</form>';
 
 }
@@ -30,6 +33,5 @@ if(isset($_POST['btnOk'])){
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
 </body>
 </html>

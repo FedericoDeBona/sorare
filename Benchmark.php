@@ -9,7 +9,7 @@ $maxEth = explode('&', $_SERVER['QUERY_STRING'])[2];
 $from = explode('=', $from)[1];
 $to = explode('=', $to)[1];
 $maxEth = explode('=', $maxEth)[1];
-$bestLeagues = array('K League 1', 'J1 League', 'CSL', 'MLS', 'Eredivisie', 'Primera Division', 'Serie A', 'RPL', 'Primeira Liga', 'Ligue 1', 'Bundesliga', 'Liga MX');
+$bestLeagues = array('K League 1', 'J1 League', 'CSL', 'MLS', 'Eredivisie', 'Primera Division', 'Serie A', 'RPL', 'Primeira Liga', 'Ligue 1', 'Bundesliga', 'Liga MX', 'Liga Profesional Argentina');
 $playerStatus = array('starter' => '<b style="color: green">Starter</b>', 'regular' => 'Regular', 'not_playing' => '<b style="color: red">Reserve</b>', 'substitute' => 'Substitute');
 
 $start = microtime(true);
