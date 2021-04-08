@@ -66,7 +66,6 @@ curl_setopt($crl, CURLOPT_POSTFIELDS, $post_data);
 curl_setopt($crl, CURLOPT_HTTPHEADER, array(
 	"Content-Type"=> "application/json",
 	"X-CSRF-Token"=> "SXMlVSK+L47+0l6mp4Au6t6OKkDjtxkF4XFAEjQVv/wlgoydWEaHGuDurGPAE0TDLQHLKu8wu6XdrBvqQoK/yw==",
-	'HTTP_APIKEY' => "c2ac26c9cd5752b87afd4da1200496d04716dbd174421c4914df429a2518a049010be6f34ea57f8de37bb99cf3fac25fb9b66d9d988d8c03789d7dce96c9730a",
 	"Accept-Encoding" => "gzip, deflate, br"
 ));
 
